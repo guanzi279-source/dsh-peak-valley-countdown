@@ -1,0 +1,32 @@
+{
+  "name": "dsh-peak-valley-countdown",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Composer badge counting down to DeepSeek API peak/off-peak pricing transitions.",
+  "license": "MIT",
+  "author": "guanzi279-source",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guanzi279-source/dsh-peak-valley-countdown.git"
+  },
+  "homepage": "https://github.com/guanzi279-source/dsh-peak-valley-countdown#readme",
+  "bugs": {
+    "url": "https://github.com/guanzi279-source/dsh-peak-valley-countdown/issues"
+  },
+  "keywords": ["dsh-plugin", "deepseek", "deepseek-harness", "pricing", "countdown", "ui"],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "locale/*.json", "icon.svg"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

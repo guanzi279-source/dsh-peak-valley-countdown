@@ -1,0 +1,6 @@
+url: https://github.com/guanzi279-source/dsh-peak-valley-countdown
+name: guanzi279-source/dsh-peak-valley-countdown
+category: usage
+description:
+  en: 'Shows a composer badge counting down to DeepSeek API peak and off-peak pricing transitions, with weekends and the 2026 Chinese public holiday calendar treated as off-peak.'
+  zh: '在输入框下方显示距离 DeepSeek 峰时/谷时切换的倒计时，周末与 2026 年法定节假日按谷时计算。'
