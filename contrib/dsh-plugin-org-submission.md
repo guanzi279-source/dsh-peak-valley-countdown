@@ -10,9 +10,9 @@ https://github.com/guanzi279-source/dsh-peak-valley-countdown
 界面与体验
 
 ### 安装命令
-dsh plugin --profile web add github:guanzi279-source/dsh-peak-valley-countdown
+dsh plugin --profile web add dsh-peak-valley-countdown
 
-（发布 npm 后改为：dsh plugin --profile web add dsh-peak-valley-countdown）
+（仅源码安装：dsh plugin --profile web add github:guanzi279-source/dsh-peak-valley-countdown）
 
 ### 兼容与运行要求
 DeepSeek Harness 0.2.1-rc.2 Web profile；依赖 conversation.composer.dock 插槽与 locale 服务；纯 JavaScript，无构建、无运行时依赖。

@@ -1,5 +1,6 @@
 # 梁文峰 / 梁文谷倒计时
 
+[![npm](https://img.shields.io/npm/v/dsh-peak-valley-countdown)](https://www.npmjs.com/package/dsh-peak-valley-countdown)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 在 DeepSeek Harness 输入框下方显示一枚 DeepSeek 峰谷倒计时徽章：
@@ -46,19 +47,19 @@
 
 ## 安装
 
-### 从 GitHub 安装（当前可用）
-
-```sh
-dsh plugin --profile web add github:guanzi279-source/dsh-peak-valley-countdown
-```
-
-### 从 npm 安装（发布后可用）
+### 从 npm 安装（推荐）
 
 ```sh
 dsh plugin --profile web add dsh-peak-valley-countdown
 ```
 
-> 当前仓库尚未发布 npm 包时，请使用上面的 GitHub 命令。安装后刷新页面，徽章出现在输入框下方；如果你的 profile 不是 `web`，把 `--profile web` 换成实际 profile（例如 `desktop`）。
+### 从 GitHub 安装（源码）
+
+```sh
+dsh plugin --profile web add github:guanzi279-source/dsh-peak-valley-countdown
+```
+
+安装后刷新页面，徽章出现在输入框下方；如果你的 profile 不是 `web`，把 `--profile web` 换成实际 profile（例如 `desktop`）。
 
 ## 使用
 
@@ -103,7 +104,13 @@ A compact composer-dock badge for DeepSeek API peak/off-peak pricing. During off
 
 Peak hours are Monday–Friday 09:00–12:00 and 14:00–18:00 Beijing time; all other hours, weekends and public holidays are off-peak, per the [DeepSeek pricing page](https://api-docs.deepseek.com/quick_start/pricing).
 
-Install from GitHub:
+Install from npm:
+
+```sh
+dsh plugin --profile web add dsh-peak-valley-countdown
+```
+
+Or from GitHub source:
 
 ```sh
 dsh plugin --profile web add github:guanzi279-source/dsh-peak-valley-countdown
